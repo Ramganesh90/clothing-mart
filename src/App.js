@@ -7,8 +7,8 @@ import ShopPage from './pages/shop/shop.component';
 import SignInSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from "../src/firebase/firebase.utils";
 import { connect } from 'react-redux';
-import { setCurrentUser } from "./redux/reducer/user/user.action";
-import { selectCurrentUser } from './redux/reducer/user/user.selector';
+import { setCurrentUser } from "./redux/user/user.action";
+import { selectCurrentUser } from './redux/user/user.selector';
 import { createStructuredSelector } from "reselect";
 import CheckoutPage from './pages/checkout/checkout.component';
 

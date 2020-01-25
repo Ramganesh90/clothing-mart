@@ -4,12 +4,12 @@ import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
 import { connect } from 'react-redux';
-import { setCurrentUser } from "../../redux/reducer/user/user.action";
+import { setCurrentUser } from "../../redux/user/user.action";
 import CartIcon from "./../cart-icon/cart-icon.component";
 import CartDropDown from "../cart-dropdown/cart-dropdown.component";
 import { createStructuredSelector } from "reselect";
-import { selectCurrentUser } from "../../redux/reducer/user/user.selector";
-import { selectCartHidden } from "../../redux/reducer/cart/cart.selectors";
+import { selectCurrentUser } from "../../redux/user/user.selector";
+import { selectCartHidden } from "../../redux/cart/cart.selectors";
 
 const Header = ({ currentUser, hidden }) => (
     <div className="header">

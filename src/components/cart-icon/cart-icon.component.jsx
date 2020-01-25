@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { ReactComponent as ShoppingIcon } from "../../../src/assets/images/shopping-bag.svg"
 
 import "./cart-icon.styles.scss";
-import { toggleCartHidden } from "./../../redux/reducer/cart/cart.actions";
-import { selectCartItemsCount } from '../../redux/reducer/cart/cart.selectors';
+import { toggleCartHidden } from "../../redux/cart/cart.actions";
+import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 import { createStructuredSelector } from "reselect";
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
